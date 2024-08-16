@@ -12,6 +12,8 @@ HK_RECORD_APPLE_STAND_HOUR = "HKCategoryTypeIdentifierAppleStandHour"
 HK_RECORD_APPLE_STAND_HOUR_IDLE = "HKCategoryValueAppleStandHourIdle"
 HK_RECORD_APPLE_STAND_HOUR_STOOD = "HKCategoryValueAppleStandHourStood"
 HK_RECORD_APPLE_STAND_TIME = "HKQuantityTypeIdentifierAppleStandTime"
+HK_RECORD_APPLE_WALKING_STEADINESS = "HKQuantityTypeIdentifierAppleWalkingSteadiness"
+HK_RECORD_AUDIO_EXPOSURE_EVENT = "HKCategoryTypeIdentifierAudioExposureEvent"
 HK_RECORD_AUDIO_EXPOSURE_EVENT_LOUD_ENVIRONMENT = (
     "HKCategoryValueAudioExposureEventLoudEnvironment"
 )
@@ -89,6 +91,7 @@ HK_RECORD_ENVIRONMENTAL_AUDIO_EXPOSURE = (
 HK_RECORD_FLIGHTS_CLIMBED = "HKQuantityTypeIdentifierFlightsClimbed"
 HK_RECORD_FORCED_EXPIRATORY_VOLUME1 = "HKQuantityTypeIdentifierForcedExpiratoryVolume1"
 HK_RECORD_FORCED_VITAL_CAPACITY = "HKQuantityTypeIdentifierForcedVitalCapacity"
+HK_RECORD_HANDWASHING_EVENT = "HKCategoryTypeIdentifierHandwashingEvent"
 HK_RECORD_HEADPHONE_AUDIO_EXPOSURE = "HKQuantityTypeIdentifierHeadphoneAudioExposure"
 HK_RECORD_HEART_RATE = "HKQuantityTypeIdentifierHeartRate"
 HK_RECORD_HEART_RATE_VARIABILITY_S_D_N_N = (
@@ -120,10 +123,19 @@ HK_RECORD_PERIPHERAL_PERFUSION_INDEX = (
 HK_RECORD_PUSH_COUNT = "HKQuantityTypeIdentifierPushCount"
 HK_RECORD_RESPIRATORY_RATE = "HKQuantityTypeIdentifierRespiratoryRate"
 HK_RECORD_RESTING_HEART_RATE = "HKQuantityTypeIdentifierRestingHeartRate"
+HK_RECORD_RUNNING_STRIDE_LENGTH = "HKQuantityTypeIdentifierRunningStrideLength"
+HK_RECORD_RUNNING_GROUND_CONTACT_TIME = "HKQuantityTypeIdentifierRunningGroundContactTime"
+HK_RECORD_RUNNING_HEART_RATE_RECOVERY_ONE_MINUTE = "HKQuantityTypeIdentifierHeartRateRecoveryOneMinute"
+HK_RECORD_RUNNING_POWER = "HKQuantityTypeIdentifierRunningPower"
+HK_RECORD_RUNNING_SPEED = "HKQuantityTypeIdentifierRunningSpeed"
+HK_RECORD_RUNNING_VERTICAL_OSCILLATION = "HKQuantityTypeIdentifierRunningVerticalOscillation"
 HK_RECORD_SLEEP_ANALYSIS = "HKCategoryTypeIdentifierSleepAnalysis"
-HK_RECORD_SLEEP_ANALYSIS_ASLEEP = "HKCategoryValueSleepAnalysisAsleep"
+HK_RECORD_SLEEP_ANALYSIS_ASLEEP = "HKCategoryValueSleepAnalysisAsleepUnspecified"
 HK_RECORD_SLEEP_ANALYSIS_AWAKE = "HKCategoryValueSleepAnalysisAwake"
 HK_RECORD_SLEEP_ANALYSIS_IN_BED = "HKCategoryValueSleepAnalysisInBed"
+HK_RECORD_SLEEP_DURATION_GOAL = "HKDataTypeSleepDurationGoal"
+HK_RECORD_STAIR_ASCENT_SPEED = "HKQuantityTypeIdentifierStairAscentSpeed"
+HK_RECORD_STAIR_DESCENT_SPEED = "HKQuantityTypeIdentifierStairDescentSpeed"
 HK_RECORD_STEP_COUNT = "HKQuantityTypeIdentifierStepCount"
 HK_RECORD_SWIMMING_STROKE_COUNT = "HKQuantityTypeIdentifierSwimmingStrokeCount"
 HK_RECORD_TOOTHBRUSHING_EVENT = "HKCategoryTypeIdentifierToothbrushingEvent"
@@ -153,7 +165,7 @@ APPLE_EXERCISE_TIME_GOAL = "@appleExerciseTimeGoal"
 APPLE_STAND_HOURS = "@appleStandHours"
 APPLE_STAND_HOURS_GOAL = "@appleStandHoursGoal"
 
-# METADATA 
+# METADATA
 HK_AVERAGE_METS = "HKAverageMETs"
 HK_ELEVATION_ASCENDED = "HKElevationAscended"
 HK_INDOOR_WORKOUT = "HKIndoorWorkout"
@@ -263,4 +275,26 @@ HK_CONSTANTS = {
     HK_RECORD_SLEEP_ANALYSIS_IN_BED: 0,
     HK_RECORD_SLEEP_ANALYSIS_ASLEEP: 1,
     HK_RECORD_SLEEP_ANALYSIS_AWAKE: 2,
+    "HKCategoryTypeIdentifierSleepAnalysisAsleepCore": 3,
+    "HKCategoryTypeIdentifierSleepAnalysisAsleepDeep": 4,
+    "HKCategoryTypeIdentifierSleepAnalysisAsleepREM": 5
 }
+
+TYPE = "@type"
+SOURCE_NAME = "@sourceName"
+SOURCE_VERSION = "@sourceVersion"
+DEVICE = "@device"
+CREATION_DATE = "@creationDate"
+START_DATE = "@startDate"
+END_DATE = "@endDate"
+DATE = '@date'
+UNIT = "@unit"
+BPM = "@bpm"
+TIME = "@time"
+
+KEY = "@key"
+VALUE = "@value"
+MIN='@minimum'
+MAX='@maximum'
+AVG='@average'
+SUM='@sum'
